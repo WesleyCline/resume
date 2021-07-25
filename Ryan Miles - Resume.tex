@@ -1,0 +1,161 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Edited by: Ryan Miles 7/1/21
+% Copying and distribution of this file, with or without modification,
+% are permitted in any medium without royalty provided the copyright
+% notice and this notice are preserved. This file is offered as-is,
+% without any warranty.
+%
+%----------------------------------------------------------------------------------------
+%	Forked From
+%----------------------------------------------------------------------------------------
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.4 in,top=0.4in,right=0.4 in,bottom=0.4in]{geometry} % Document margins
+\usepackage{qrcode}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usetikzlibrary{calc}
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}} 
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Ryan Miles} % Your name
+\address{(404) 922-0875 \\ Ryan.R.Miles@gmail.com \\ Atlanta, GA} % Your address
+%\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
+\address{ryanmiles.me \\  github.com/Ryanm14 \\ linkedin.com/in/ryanrmiles}  % Your phone number and email
+
+\begin{document}
+	
+	\begin{tikzpicture}[remember picture,overlay]
+		\node[anchor=south west,inner sep=0pt] at ($(current page.north east)-(3.2cm,2.7cm)$) {
+				\qrcode[height=2.2cm]{http://ryanmiles.me}
+		};
+	\end{tikzpicture}
+	
+\vspace{-3em}
+
+%----------------------------------------------------------------------------------------
+%	OBJECTIVE
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{OBJECTIVE}
+%
+%{Recently graduated, multidisciplinary Engineer with excellent problem solving abilities and process-thinking skill seeks hands on experience within a company that embraces creativity and innovation.Through my studies,}
+
+%\end{rSection}
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+	
+{\bf Master of Science in Computer Science} \emph{Specialization in Computing Systems} \hfill {August 2021 - May 2022}
+\\ 
+Georgia Institute of Technology, Atlanta, GA.
+
+{\bf Bachelor of Science in Computer Science} \emph{Specialization in Graphics \& AI}\hfill {August 2017 - May 2021}
+\\ 
+Georgia Institute of Technology, Atlanta, GA. GPA: 3.90
+\\
+Teaching Assistant: Intro to Computer Graphics, 3D UI Design in VR, Intro to Object Oriented Programming
+\end{rSection}
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{SKILLS}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{3ex}} l }
+Programming& Java, Kotlin, Python, Android, LaTex, Typescript, SQL, React  \\
+Android Libraries& LiveData, Android Jetpack, Timber, Dagger, Firebase, OkHTTP, Retrofit, Fresco, EventBus \\ 
+Coursework& Database Design, Data Structures and Algorithms, Computer Graphics, Game AI \\
+Platforms &  Ubuntu, Mac, Windows, NixOS, Android  \\
+\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Work Experience}
+	
+		\begin{rSubsection}{Intern Android Developer at BlueFletch,}{ April~2019 - Current}{}{}{Atlanta, GA}
+		\item Developed an AOSP platform service to run system level commands on Manufacturer signed devices
+		\item Programmed an AES encrypted IPC channel with for secure data transfer between multiple apps through AIDL
+		\item Designed a customizable \& secure Android replacement notification drawer to allow/deny specific notifications
+		
+	\end{rSubsection} 
+	
+	\begin{rSubsection}{Research Assistant  at Georgia Tech,}{Jan 2021 - Aug 2021}{}{}{Atlanta, GA}
+		\item Spearheaded integrating VR in a React conferencing platform using Babylon.js and WebXR with the AEL Lab 
+		\item Deployed the project to an EC2 instance with backend PostgreSQL, NGINX web server, and Typescript codebase
+	\end{rSubsection} 
+
+	\begin{rSubsection}{Intern Android Developer at BlueFletch,}{ May~2018 - April 2019}{}{}{Atlanta, GA}
+	\item Developed an Android for Work platform in Java that increased supported devices by 1500\%
+	\item Increased Android projects code coverage from 0\% to 70\% using Espresso, JUnit, Mockito, and Robolectric
+	\item Implemented a unified theming library in Java to save 6-7 development hours per demo request
+	
+\end{rSubsection} 
+	
+
+\begin{rSubsection}{Intern at Cisco Systems,}{May 2016 - July 2017}{}{}{Greater Atlanta Area, GA}
+	\item Coordinated daily operations during the Cisco High STEAM Externship Program
+\end{rSubsection} 
+\end{rSection} 
+
+\vspace{.3em}
+
+
+\begin{rSectionProjects}{PROJECTS} {All projects available at ryanmiles.me}
+	
+	\begin{rSubsectionProjects}{Unfoldit Android}{Aug 2018 - Present}{Creation of Unfoldit Android, a mobile app to test and enhance your spatial awareness abilities}{Kotlin, Dagger, Firebase Analytics, Single Activity MVVM Architecture}
+		\item Developed a production ready Android game around spatial awareness with Kotlin, modern libraries, and tests
+		\item Finalists for Georgia Tech 2019 Inventure Prize with 1000+ Downloads and 100+ five-star reviews
+		
+	\end{rSubsectionProjects} 
+
+\begin{rSubsectionProjects}{Name Chat Android}{Aug 2020 - Dec 2020}{Creation of Name Chat Android, a network to find \& chat with all the people in the world with your name}{Kotlin, Firestore, Firebase Auth, LiveData, Navigation Component}{}
+	\item Implemented a Firestore backend with caching reducing calls by 70\% and used Live Data to update the UI
+\end{rSubsectionProjects}
+
+\begin{rSubsectionProjects}{Machine Learning For Trading Project}{Aug 2019 - Dec 2019}{Wrote a final project paper in LaTex using Random Forest with technical indicators to trade stocks }{Python, Pandas, Numpy, Matplotlib, LaTex} {}
+	\item Calculated Momentum, Bolinger Bands, and Volume-Price Trend \% to use as technical indicators
+	\item Implemented Random Forest and a market simulator using Python, Pandas, and Matplotlib for the report	
+\end{rSubsectionProjects} 
+
+
+\begin{rSubsectionProjects}{Europe Train DB System}{May 2019 - Aug 2019}{Collaborated on designing and implementing a database system for Europe's Train System}{SQL, EER Diagram, IF Diagram} {}
+	\item Designed an Enhanced Entity Relationship Diagram \& Information Flow Diagram to model the system specification
+	\item Programmed the SQL create table  \& query statements per each specification
+	
+\end{rSubsectionProjects} 
+
+
+\begin{rSubsectionProjects}{Space Trader Android}{Jan 2019 - May 2019}{Collaborated on Space Trader Android, a retro complex strategy game, redesigned for Android}{Java, Room, UML, JUnit, GSON, Recyclerview, Travis.ci} {}
+	\item Programmed the Market Activity to calculate \& show buy/sell prices from player's inventory and skill level
+	\item Designed backend Room database with serialization for saving \& restoring player state
+	
+\end{rSubsectionProjects} 
+%------------------------------------------------
+
+
+\end{rSectionProjects} 
+
+\end{document}
