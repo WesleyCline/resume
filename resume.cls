@@ -45,7 +45,7 @@
 \def \name#1{\def\@name{#1}} % Defines the \name command to set name
 \def \@name {} % Sets \@name to empty by default
 
-\def \addressSep {$\diamond$} % Set default address separator to a diamond
+\def \addressSep {$\bullet$} % Set default address separator to a diamond
 
 % One, two or three address lines can be specified 
 \let \@addressone \relax
@@ -107,7 +107,7 @@
   \MakeUppercase{\bf #1} % Section title
   \smallskip
   \hrule % Horizontal line
-   \vspace{-0.2em}
+   \vspace{-0.0em}
   \begin{list}{}{ % List for each individual item in the section
     \setlength{\leftmargin}{0em} % Margin within the section
   }
