@@ -1,0 +1,123 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Edited by: J. Harper Cline, August 20th, 2021
+% Copying and distribution of this file, with or without modification,
+% are permitted in any medium without royalty provided the copyright
+% notice and this notice are preserved. This file is offered as-is,
+% without any warranty.
+%
+%----------------------------------------------------------------------------------------
+%	Forked From
+%----------------------------------------------------------------------------------------
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{resume}
+
+\usepackage[left=0.4 in,top=0.4in,right=0.4 in,bottom=0.4in]{geometry}
+
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}} 
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+
+\name{James Harper Cline}
+\address{1511 Wild Azalea Ln. Athens, GA 30606 \\ (706)-799-6061 \\ harper.cline@gatech.edu}
+\address{United States Citizen \\  Clearance Level: Secret}
+
+\begin{document}
+
+\vspace{-1em}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Education}
+	
+	{\bf Bachelor of Science in Computer Engineering} \hfill {August 2017 - Present}
+	\\ 
+	Georgia Institute of Technology, Atlanta, GA. GPA: 3.38
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Skills}
+
+	\begin{tabular}{ @{} >{\bfseries}l @{\hspace{3ex}} l }
+	Programming & Proficient: C\#, C++, C, Python \\
+	 & Beginner: Java, MATLAB, MIPS Assembly, SystemVerilog, LaTeX \\ 
+	Platforms &  Ubuntu Server, Ubuntu Desktop, Red Hat Enterprise, Jenkins, Kubernetes  \\
+	Hardware & ARM Mbed, Arduino Uno, TERMA ALQ-213, Altera DE2 FPGA \\
+	Software & Visual Studio (Windows Presentation Foundation), Atlassian Suite, Autodesk EAGLE, JetBrains \\
+	 & Software \\
+	\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Experience}
+
+	\begin{rSubsection}{Software Engineering Co-Op at GTRI}{May~2020 - December 2020}{}{}{Atlanta, GA}
+		\item Refactored the previous Event Aggregator Windows Presentation Foundation (WPF) component, improving \\ maintainability and portability
+		\item Developed an Event Aggregator test suite to use with Jenkins, increasing code coverage from under 70\% to 100\%
+		\item Developed an Error Provider WPF component using a model-view-viewmodel framework to transmit error messages and display them to the user
+	\end{rSubsection} 
+
+	\begin{rSubsection}{Systems Engineering Co-Op at GTRI}{May 2019 - May 2020}{}{}{Atlanta, GA}
+		\item Created a LaTeX template for ALQ-213 test procedures, increasing productivity by enabling test procedures to be version controlled
+		\item Selected and implemented an acronym library for the test procedure template, allowing test procedure authors to clearly define and tag acronyms
+		\item Developed a program to locate and report acronym errors in test procedure documents, eliminating acronym errors
+	\end{rSubsection} 
+
+	\begin{rSubsection}{Research Intern at The University of Georgia}{May 2016 - August 2016}{}{}{Athens, GA}
+		\item Created augmented reality experiences for user avatar characters to participate in using Unity 3D, demonstrating the future utility of the virtual STEM buddy avatar system
+		\item Traveled to the Children’s Museum of Atlanta to demonstrate the virtual STEM buddy project, contributing to the team effort to secure funding
+	\end{rSubsection} 
+
+\end{rSection} 
+
+%----------------------------------------------------------------------------------------
+%	LEADERSHIP SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Leadership}
+
+	\begin{rSubsection}{Interfraternity Council VP of Coummunications}{November 2020 - Present}{}{}{Atlanta, GA}
+		\item Emphasized committee recruitment for Interfraternity Council technology and public relations sub-committees, increasing committee membership by 900\%
+	\end{rSubsection}
+
+	\begin{rSubsection}{Delta Chi Fraternity Recruitment Chairman}{January 2020 - August 2020}{}{}{Atlanta, GA}
+		\item Adapted recruitment strategy to be compatible with the challenges posed by Covid-19 by moving recruitment online using teleconferencing software
+		\item Executed virtual recruitment successfully, increasing the number of new members by 106\% from the previous year
+	\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSectionProjects}{PROJECTS}{}
+	
+	\begin{rSubsectionProjects}{Unfoldit Android}{Aug 2018 - Present}{Creation of Unfoldit Android, a mobile app to test and enhance your spatial awareness abilities}{Kotlin, Dagger, Firebase Analytics, Single Activity MVVM Architecture}
+		\item Developed a production ready Android game focused on spatial awareness with Kotlin, modern libraries, and tests
+		\item Finalists for the Georgia Tech 2019 InVenture Prize with 1000+ downloads and 100+ five-star reviews
+	\end{rSubsectionProjects} 
+
+\end{rSectionProjects} 
+
+\end{document}
